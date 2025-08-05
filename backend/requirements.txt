@@ -1,0 +1,40 @@
+# requirements.txt
+# FastAPI Core
+fastapi
+uvicorn[standard]
+pydantic[email]==1.10.13
+python-dotenv
+
+# Auth & Security
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt
+
+# ORM (Updated for async support)
+sqlmodel
+sqlalchemy[asyncio]
+asyncpg  # Replaces psycopg2-binary for async
+alembic  # For migrations
+
+# LangChain & RAG
+langchain
+langchain-community
+chromadb
+unstructured
+pymupdf
+python-docx
+
+# Ollama Local LLM Integration
+httpx
+
+# Background & Tasks
+aiofiles
+
+# Utils
+uuid
+python-multipart
+
+# Dev Tools
+ipython
+ruff
+black
